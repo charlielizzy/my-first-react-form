@@ -8,7 +8,7 @@ Make sure you start by installing all the packages.
 
 `npm install`
 
-To start this application you will need to run 2 sepeate commands.
+To start this application you will need to run 2 seperate commands.
 
 `npm run start:json-server` 
 
