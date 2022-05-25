@@ -1,8 +1,9 @@
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Create from './pages/Create';
-import BlogDetails from './pages/BlogDetails';
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Create from "./pages/Create";
+import BlogDetails from "./pages/BlogDetails";
+import Edit from "./pages/Edit";
 
 function App() {
   return (
@@ -10,10 +11,11 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-          <Routes >
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
-            <Route path="/blogs/:id" element={<BlogDetails />}/> 
+            <Route path="/blogs/:id" element={<BlogDetails />} />
+            <Route path="/blogs/:id/edit" element={<Edit />} />
           </Routes>
         </div>
       </div>
