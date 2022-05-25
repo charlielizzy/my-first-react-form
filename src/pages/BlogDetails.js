@@ -57,7 +57,14 @@ const BlogDetails = () => {
           <p>Written by {blog.author}</p>
           <div>{blog.body}</div>
           <button onClick={handleDelete}>Delete</button>
-          <Link to={`/blogs/${id}/edit`}>Edit</Link>
+          <Link
+            to={`/blogs/${id}/edit`}
+            title={blog.title}
+            author={blog.author}
+            body={blog.body}
+          >
+            Edit
+          </Link>
         </article>
       )}
     </div>
